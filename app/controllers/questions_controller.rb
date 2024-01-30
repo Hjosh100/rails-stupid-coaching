@@ -1,12 +1,11 @@
 class QuestionsController < ApplicationController
 
   def ask
-
   end
 
   def answer
 
-    @question = params[:answer]
+    @question = params[:question]
 
     if @question.include?('?')
       @response = 'Silly question, get dressed and go to work!'
